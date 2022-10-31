@@ -75,11 +75,12 @@ pipeline {
                 }
             }
         }
-    post {
-         always {
-             sh"docker-compose down"
-             cleanWS()
-          }
+
+    }
+    post{
+        always{
+            sh"docker-compose down"
+            cleanWS()
         }
     }
 }
