@@ -19,9 +19,9 @@ pipeline {
     }
     stages{
         stage('Get Code') {
-            steps[
+            steps{
                 checkout scm
-            ]
+            }
         }
         stage('Clean running containers') {
             steps {
